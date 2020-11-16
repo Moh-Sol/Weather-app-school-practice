@@ -1,16 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Kalam', cursive;
 }
 
-.first-class {
-  margin: 50px auto;
+body{
+
+    width: 800px;
+    height: 500px;
+    margin: 50px auto;
+}
+
+
+.container{
+ 
   width: 800px;
   height: 500px;
-  background: #67b26f; /* fallback for old browsers */
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: 50px 225px 225px;
+ background: #67b26f; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
     #4ca2cd,
@@ -27,34 +41,44 @@
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.56);
 }
 
-.weather-form {
-  display: flex;
+.form-contain{
+    /* background-color: blue; */
+display: flex;
 align-items: center;
-  padding-top: 50px;
+justify-content: flex-end;
+padding-right: 10px;
+
+}
+.weather-form {
+
+    /* background-color: red; */
   display: flex;
-  flex-direction: column;
+
+  /* padding-top: 50px; */
 }
 
 #text-input {
-  width: 220px;
-  height: 30px;
+  width: 150px;
+  height: 25px;
   background-color: rgb(204, 228, 206);
-  margin: 20px 0;
+  margin-right: 10px;
   border: 5px;
   border-radius: 15px;
   border-color: blue ;
   color: rgb(63, 121, 175);
   font-size: 14px;
   font-weight: 600;
-  padding: 0 20px;
+  padding-left: 20px;
+  text-transform: capitalize;
+
 }
 
 #submit-input {
   width: 100px;
-  height: 30px;
+  height: 25px;
   color: rgb(63, 175, 168);
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 700;
   background-color: rgb(204, 228, 206);
   border: 5px;
   border-radius: 15px;
@@ -64,4 +88,52 @@ align-items: center;
 }
 #submit-input:hover{
     color: rgb(63, 121, 175);
+}
+
+
+
+.top-contain{
+display: flex;
+flex-direction: column;
+padding-top: 50px;
+align-items: center;
+}
+
+.top-contain h1  {
+font-size: 60px;
+color: rgba(209, 235, 39, 0.755);
+font-weight: 700;
+text-transform: capitalize;
+}
+
+
+.top-contain h1:nth-child(2)  {
+    font-size: 40px;
+
+    }
+    
+.top-contain img {
+
+}
+
+
+.bottom-contain{
+ display: grid;
+grid-template-columns: 1fr 1fr;
+/* grid-template-rows: 1fr 1fr; */
+grid-gap:5px;
+/* background-color: red; */
+justify-content: center;
+align-content: center;
+align-items: center;
+justify-items: center;
+text-align: center;
+
+}
+
+.bottom-contain h3{
+    color: rgba(209, 235, 39, 0.755);
+    font-size: 28px;
+    text-transform: capitalize;
+
 }
