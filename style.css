@@ -1,0 +1,67 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.first-class {
+  margin: 50px auto;
+  width: 800px;
+  height: 500px;
+  background: #67b26f; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #4ca2cd,
+    #67b26f
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #4ca2cd,
+    #67b26f
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.56);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.56);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.56);
+}
+
+.weather-form {
+  display: flex;
+align-items: center;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+#text-input {
+  width: 220px;
+  height: 30px;
+  background-color: rgb(204, 228, 206);
+  margin: 20px 0;
+  border: 5px;
+  border-radius: 15px;
+  border-color: blue ;
+  color: rgb(63, 121, 175);
+  font-size: 14px;
+  font-weight: 600;
+  padding: 0 20px;
+}
+
+#submit-input {
+  width: 100px;
+  height: 30px;
+  color: rgb(63, 175, 168);
+  font-size: 14px;
+  font-weight: 600;
+  background-color: rgb(204, 228, 206);
+  border: 5px;
+  border-radius: 15px;
+  border-color: rgb(208, 255, 0) ;
+  text-align: center;
+
+}
+#submit-input:hover{
+    color: rgb(63, 121, 175);
+}
