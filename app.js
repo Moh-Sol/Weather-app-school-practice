@@ -1,4 +1,10 @@
 
+
+
+
+// ----------------------------------------------
+// Här finns de olika variable och selector
+
 let apiKey = '6653df7a717bee87ba87ec3fe197ef8d';
 let stadNamn, url, iconId, temperatur;
 let container = document.querySelector('.container');
@@ -11,9 +17,9 @@ let htmlIcon = document.querySelector('.bottom-contain img')
 let htmlDiscrip = document.querySelector('.bottom-contain :nth-child(3)');
 let htmlVind = document.querySelector('.bottom-contain :nth-child(2)');
 let htmlFuktighet = document.querySelector('.bottom-contain :nth-child(4)');
-// console.log(htmlFuktighet)
 
-
+// ----------------------------------------------
+// Här gör jag addEventListener för knappen submit för att ändra på url och för kalla fucction weather();
 
 submitInput.addEventListener('click', event => {
     event.preventDefault();
@@ -22,6 +28,10 @@ submitInput.addEventListener('click', event => {
     weather();
 });
 
+
+
+// ----------------------------------------------
+// Här gör jag fetch för api för att visa de info vi vill och för att visa ett error meddelande när man skriver fel stad eller när det händer något fel med länken(t.ex: med API).
 
 
 let weather = () => {
@@ -53,11 +63,11 @@ let weather = () => {
             htmlVind.innerHTML = ``
             htmlFuktighet.innerHTML = ``;
         });
-
-
 }
 
 
+
+// Här är fuction för att ändra färgar i texten enligt temperaturen 
 
 let temperaturFunc = () => {
     console.log(temperatur);
@@ -71,7 +81,5 @@ let temperaturFunc = () => {
     else if (temperatur <= 7){
         root.style.setProperty('--contain-color', 'rgba(39, 68, 235, 0.755)');
     }
-
-
 
 }
