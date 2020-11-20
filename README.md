@@ -6,7 +6,7 @@
 
 3-1 Är temperaturen högre eller lika med 17°C, då är färgen på texten orange.* Man kan testa med Somalia.
 
-3-2 Är temperaturen mellan 7°C and 17°C då är färgen på texten närmare till grön gul.* Man kan testa med Klippan.
+3-2 Är temperaturen mellan 7°C and 17°C då är färgen på texten närmare till grön gul.* Man kan testa med Paris.
 
 3-3 Är temperaturen mindre eller lika med 7, då är färgen på texten närmare till blå.* Man kan testa med Moscow.
 
