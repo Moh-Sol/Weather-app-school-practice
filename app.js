@@ -31,8 +31,9 @@ submitInput.addEventListener('click', event => {
 
 
 // ----------------------------------------------
-// Här gör jag fetch för api för att visa de info vi vill och för att visa ett error meddelande när man skriver fel stad eller när det händer något fel med länken(t.ex: med API).
-
+// Här gör jag fetch för api för att visa de info vi vill ,
+/*            och för att visa ett error meddelande när man skriver fel stad 
+eller när det händer något fel med länken(t.ex: med API). */
 
 let weather = () => {
     fetch(url).then((response) => {
@@ -40,7 +41,7 @@ let weather = () => {
             throw 'Staden kunde inte hittas';
         }
         else if (response.status === 401) {
-            throw response.statusText;
+            throw response.statusText;/* med throw skcikar vi del meddelande till catch */
         }
         else return response.json();
 
@@ -55,6 +56,9 @@ let weather = () => {
             htmlDiscrip.innerHTML = data.weather[0].description;
             htmlVind.innerHTML = `Vindhastighet: ${data.wind.speed}`;
             htmlFuktighet.innerHTML = `Luftfuktighet: ${data.main.humidity}`
+
+
+/*  Här tar bort jag allt gamla info från sidan och visar istället bara det fel meddelandet som vi fick */
         }).catch((x) => {
             htmlName.innerHTML = '';
             htmlTempoAndErr.innerHTML = x;
@@ -67,7 +71,9 @@ let weather = () => {
 
 
 
-// Här är fuction för att ändra färgar i texten enligt temperaturen 
+/* Här är fuction för att ändra färgar i texten enligt temperaturen, alltså om temperatur >= 17 
+
+eller temperatur < 17 && temperatur > 7 eller temperatur <= 7*/
 
 let temperaturFunc = () => {
     console.log(temperatur);
