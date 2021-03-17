@@ -1,4 +1,3 @@
-# Kuns-Kont-2
  
 - På den första sidan ser man ett sök fält där man kan skriva namnet för staden eller landet man söker.
 
